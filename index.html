@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniBro</title>
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #0f0f0f;
+        }
+        nav{
+            background-color: #150050;
+            display: flex;
+            justify-content: space-between;
+            height: 85px;
+            align-items: center;
+        }
+        .navOptions{
+            padding-right:30px;
+        }
+        .navOptions>a{
+            padding: 10px;
+            text-decoration: none;
+            color: aliceblue;
+            border-bottom: 0;
+        }
+        .navOptions>a:hover{
+            border-bottom: solid #FB2576;   
+        }
+        .TextBox{
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .imgbox{
+            height: 30px;
+            margin: auto;
+            padding-left: 10px;
+            align-items: center;
+        }
+        .TextBox>input{
+            width: 400px;
+            height: 50px;
+            border: solid white;
+            border-radius: 15px;
+        }
+        .TextBox:hover{
+            background-color: #FB2576;
+        }
+        .TextBox>input::placeholder{
+            padding-left: 20px;
+            color: #0f0f0f;
+        }
+        .logo{
+            margin-left: 20px;
+        }
+        /* banner */
+        .banner{
+            display: flex;
+            /* background-color: rgba(21, 0, 80, 0.5); */
+            border: 2px solid #FB2576;
+            margin-top: 20px;
+            border-radius: 50px;
+            margin: 20px;
+        }
+        .banner:hover{
+            color: #FB2576;  
+        }
+        .image{
+            float: right;
+            width: 750px;
+            height: 400px;
+            border: 2px solid black;
+        }
+        .BanImg{
+            margin-left: 20px;
+            align-self: center;
+            background-image: url(./assets/606284.jpg);
+            border-radius: 20px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            text-align: justify;
+            width: 750px;
+            height: 400px;
+            transition: width 0.09s ease-in-out;
+            transition: height 0.09s ease-in-out;
+
+        }
+        .BanImg:hover{
+            width: 800px;
+            height: 450px;
+        }
+        .text{
+            padding: 30px;
+            margin: auto;
+            width: 700px;
+            height: 500px;
+            color: aliceblue;
+            text-align: justify;
+            font-size: larger;
+        }
+        .text>p{
+            text-indent: 50px;
+        }
+        .BanButtons>button{
+            width: 150px;
+            height: 40px;
+            color:#FB2576;
+            background-color:#0f0f0f;
+            border: 2px solid #FB2576;
+            border-radius: 20px;
+            transition: width 200ms ease-in-out;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: medium;   
+        }
+        .BanButtons>button:hover{
+            background-color: #FB2576;
+            border: 2px solid #0f0f0f;
+            color: #0f0f0f;
+            width: 160px;
+        }
+        /* card */
+        .card{
+            width: 250px;
+            height:auto;
+            border: 2px solid #FB2576;
+            text-align: center;
+            border-radius: 20px;
+            display: block;
+            color: aliceblue;
+        }
+        .card:hover{
+            color: white;
+            border: 2px solid #FB2576;
+            filter: drop-shadow(1px 1px 6px #fb2576 );
+        }
+        .card>img{
+            width: auto;
+            height: 250px;
+            width: 200px;
+            margin-top: 0px;
+            border-radius: 20px;
+        }
+        .card>img:hover{
+            filter: drop-shadow(1px 1px 4px #fb2576);
+            width:250px;
+            height: 300px;
+        }
+        .card>p{
+            text-align: justify;
+            padding: 5px;
+        }
+        .card>button{
+            width: 100px;
+            height: 40px;
+            color:#FB2576;
+            background-color:#0f0f0f;
+            border: 2px solid #FB2576;
+            border-radius: 20px;
+            transition: width 200ms linear;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            margin-bottom: 20px;
+        }
+        .card>button:hover{
+            background-color: #FB2576;
+            color: #0f0f0f;
+            width: 130px;   
+        }
+        .panel{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .heading{
+            margin-bottom: 30px;
+            border-bottom: 2px solid #FB2576;
+            border-right: 2px solid #FB2576;
+            border-top: 2px solid #FB2576;
+            width: 250px;
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            text-indent: 30px;
+        }
+        /* footers */
+        .footPan{
+            padding-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            background-color: #150050;
+            color: aliceblue;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .socials{
+            align-self: center;
+            margin-right: 10px;
+            color: white;
+            border-bottom: 0;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        li:hover{
+            border-bottom: 2px solid #FB2576;
+        }
+        li>a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/AnibroTextWhiteLogo.png" alt="Logo Here">
+            </div>
+            <div class="TextBox">
+                <img class= "imgbox" src="./assets/Search icon.png" alt="logo" >
+                <input type="text" name="Seacrh" placeholder="Search Series">
+            </div>
+            <div class="navOptions">
+                <a href="./index.html">Home</a>
+                <a href="./movies.html">Movies</a>
+                <a href="./series.html">Series</a>
+                <a href="./LoginPage.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <div class="banner">
+        <div class="BanImg"> 
+        </div>
+        <div class="text">
+            <h1>WHAT's NEW</h1>
+            <p>Undoubtedly, the Egghead Island Arc of One Piece has been a sensation and fans absolutely cannot wait to see more of that. Unfortunately, One Piece's Egghead Island Arc will now be put on halt, as the anime is set to go on a 6-month break, as was announced by the official One Piece sources last Sunday.</p>
+            <br>
+            <div class="BanButtons"> 
+                <button>NEXT</button>
+                <button>VIEW MORE</button>
+            </div>
+        </div>
+    </div>
+    <h3 class="heading">NEW RELEASE</h3>
+    <div class="panel">
+        <div class="card">
+            <img src="./assets/poster/one piece.png" alt="one piece poster">
+            <h3>ONE PIECE</h3>
+            <button onclick="VidPage()">PLAY</a></button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/poster/demon slayer.jpg" alt="Demon slayer poster">
+            <h3>DEMON SLAYER</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/poster/naruto.jpg" alt="Naruto">
+            <h3>NARUTO</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/poster/my hero academia.jpg" alt="my hero academia">
+            <h3>MY HERO ACADEMIA</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+    </div>
+    <h3 class="heading">ACTION</h3>
+    <div class="panel">
+        <div class="card">
+            <img src="./assets/poster/black clover.png" alt="BLACK CLOVERS">
+            <h3>BLACK CLOVERS</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/poster/death note.jpg" alt="DEATH NOTE">
+            <h3>DEATH NOTE</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/poster/jjk.jpg" alt="JUJUTSU KAISEN">
+            <h3>JUJUTSU KAISEN</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/poster/baki.jpg" alt="BAKI">
+            <h3>BAKI</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+    </div>
+    <h3 class="heading">SHONEN</h3>
+    <div class="panel">
+        <div class="card">
+            <img src="./assets/poster/chainsaw man.jpg" alt="CHAINSAW MAN">
+            <h3>CHAINSAW MAN</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/poster/CLASS room of elite.jpg" alt="CLASSROOM OF ELITE">
+            <h3>CLASSROOM OF ELITE</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/poster/one punch man.png" alt="ONE PUNCH MAN">
+            <h3>ONE PUNCH MAN</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/poster/black clover.png" alt="BLACK CLOVER">
+            <h3>Sasuke</h3>
+            <button onclick="VidPage()">PLAY</button>
+            <button>LATER</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footPan">
+            <div class="logo">
+                <img src="./assets/LogoTextImage.png">
+                <h5>Your anime destination</h5>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="./about_us.html">ABOUT US</a></li>
+                    <li><a href="">INSTAGRAM</a></li>
+                    <li><a href="">FACEBOOK</a></li>
+                    <li><a href="">REDDIT</a></li>
+                </ul>
+            </div>    
+        </div>  
+    </footer>
+    <script>
+        function VidPage(){
+            window.location.href = "./Video.html";
+        }
+    </script>
+</body>
+</html>

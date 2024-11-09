@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniBro</title>
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #0f0f0f;
+        }
+        nav{
+            background-color: #150050;
+            display: flex;
+            justify-content: space-between;
+            height: 85px;
+            align-items: center;
+        }
+        .navOptions{
+            padding-right:30px;
+        }
+        .navOptions>a{
+            padding: 10px;
+            text-decoration: none;
+            color: aliceblue;
+            border-bottom: 0;
+        }
+        .navOptions>a:hover{
+            border-bottom: solid #FB2576;   
+        }
+        .TextBox{
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .imgbox{
+            height: 30px;
+            margin: auto;
+            padding-left: 10px;
+            align-items: center;
+        }
+        .TextBox>input{
+            width: 400px;
+            height: 50px;
+            border: solid white;
+            border-radius: 15px;
+        }
+        .TextBox:hover{
+            background-color: #FB2576;
+        }
+        .TextBox>input::placeholder{
+            padding-left: 20px;
+            color: #0f0f0f;
+        }
+        .logo{
+            margin-left: 20px;
+        }
+        /* card */
+        .card{
+            width: 300px;
+            height:auto;
+            border: 2px solid #FB2576;
+            margin:30px;
+            text-align: center;
+            border-radius: 20px;
+            display: block;
+            color: aliceblue;
+        }
+        .card:hover{
+            color: white;
+            border: 2px solid #FB2576;
+            filter: drop-shadow(1px 1px 6px #fb2576 );
+        }
+        .card>img{
+            width: auto;
+            height: 200px;
+            margin-top: 10px;
+            border-radius: 20px;
+            transition: width 500ms linear;
+            transition: height 100ms linear;
+        }
+        .card>img:hover{
+            filter: drop-shadow(1px 1px 4px #fb2576);
+            width:250px;
+            height: 300px;
+        }
+        .card>p{
+            text-align: justify;
+            padding: 10px;
+        }
+        .card>button{
+            width: 100px;
+            height: 40px;
+            color:#FB2576;
+            background-color:#0f0f0f;
+            border: 2px solid #FB2576;
+            border-radius: 20px;
+            transition: width 200ms linear;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            margin-bottom: 20px;
+        }
+        .card>button:hover{
+            background-color: #FB2576;
+            color: #0f0f0f;
+            width: 160px;   
+        }
+        .panel{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .heading{
+            margin-bottom: 30px;
+            border-bottom: 2px solid #FB2576;
+            border-right: 2px solid #FB2576;
+            border-top: 2px solid #FB2576;
+            width: 250px;
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            text-indent: 30px;
+        }
+        .carousel-container {
+            position: relative;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .carousel-slide {
+            display: flex;
+            transition: transform 0.5s ease;
+            width: 100%;
+        }
+        .carousel-control {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 2rem;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            cursor: pointer;
+            z-index: 10;
+        }
+        .carousel-control.left {
+            left: 0;
+        }
+        .carousel-control.right {
+            right: 0;
+        }
+        .heading {
+            margin-bottom: 20px;
+            color: white;
+            text-align: center;
+        }
+        /* footers */
+        .footPan{
+            padding-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            background-color: #150050;
+            color: aliceblue;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .socials{
+            align-self: center;
+            margin-right: 10px;
+            color: white;
+            border-bottom: 0;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        li:hover{
+            border-bottom: 2px solid #FB2576;
+        }
+        li>a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/AnibroTextWhiteLogo.png" alt="Logo Here">
+            </div>
+            <div class="TextBox">
+                <img class="imgbox" src="./assets/Search icon.png" alt="logo">
+                <input type="text" name="Search" placeholder="Search Series">
+            </div>
+            <div class="navOptions">
+                <a href="./index.html">Home</a>
+                <a href="./movies.html">Movies</a>
+                <a href="./series.html">Series</a>
+                <a href="./LoginPage.html">Login</a>
+            </div>
+        </nav>
+    </header>   
+    <h3 class="heading">POPULAR</h3>
+    <section class="carousel-container">
+        <section class="carousel-slide" id="popular-carousel">
+            <div class="card">
+                <img src="./assets/images/jujutsu.jpg" alt="Jusutsu Kaisen poster">
+                <h3>JUJUTSU KAISEN</h3>
+                <button>PLAY</button>
+                <button>LATER</button>
+            </div>
+            <div class="card">
+                <img src="./assets/images/demonslayer.jpg" alt="Demon Slayer">
+                <h3>DEMON SLAYER</h3>
+                <button>PLAY</button>
+                <button>LATER</button>
+            </div>
+            <div class="card">
+                <img src="./assets/images/yourname.jpg" alt="YOUR NAME">
+                <h3>YOUR NAME</h3>
+                <button>PLAY</button>
+                <button>LATER</button>
+            </div>
+            <div class="card">
+                <img src="./assets/images/whisker.jpg" alt="A WHISKER AWAY">
+                <h3>A WHISKER AWAY</h3>
+                <button>PLAY</button>
+                <button>LATER</button>
+            </div>
+            <div class="card">
+                <img src="./assets/images/princess.jpg" alt="The Tale of the Princess Kaguya">
+                <h3>THE TALE OF PRINCESS KAGUVA</h3>
+                <button>PLAY</button>
+                <button>LATER</button>
+            </div>
+            <div class="card">
+                <img src="./assets/images/poppy.jpg" alt="From Up on Poppy Hill">
+                <h3>FROM UP ON POPPY HILL</h3>
+                <button>PLAY</button>
+                <button>LATER</button>
+            </div>
+        </section>
+        <span class="carousel-control left" onclick="prevSlide()">&#10094;</span>
+        <span class="carousel-control right" onclick="nextSlide()">&#10095;</span>
+    </section>
+    <h3 class="heading">TOP PICKS FOR YOU</h3>
+    <div class="panel">
+        <div class="card">
+            <img src="./assets/images/fireflies.jpg" alt="FIREFLIES">
+            <h3>FIREFLIES</h3>
+            <button>PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/images/whisper.jpg" alt="THE WIND RISES">
+            <h3>THE WIND RISES</h3>
+            <button>PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/images/whispers.png" alt="THE WHISPER OF HEARTS">
+            <h3>THE WHISPER OF HEARTS</h3>
+            <button>PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/images/spirits.jpg" alt="SPIRITED AWAY">
+            <h3>SPIRITED AWAY</h3>
+            <button>PLAY</button>
+            <button>LATER</button>
+        </div>
+    </div>
+    <h3 class="heading">ROMANCE</h3>
+        <div class="panel">
+        <div class="card">
+            <img src="./assets/images/whisper.jpg" alt="THE WIND RISES">
+            <h3>THE WIND RISES</h3>
+            <button>PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/images/whispers.png" alt="THE WHISPER OF HEARTS">
+            <h3>THE WHISPER OF HEARTS</h3>
+            <button>PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/images/princess.jpg" alt="The Tale of the Princess Kaguya">
+            <h3>THE TALE OF PRINCESS KAGUVA</h3>
+            <button>PLAY</button>
+            <button>LATER</button>
+        </div>
+        <div class="card">
+            <img src="./assets/images/poppy.jpg" alt="From Up on Poppy Hill">
+            <h3>FROM UP ON POPPY HILL</h3>
+            <button>PLAY</button>
+            <button>LATER</button>
+        </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footPan">
+            <div class="logo">
+                <img src="./assets/LogoTextImage.png">
+                <h5>Your anime destination</h5>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="./about_us.html">ABOUT US</a></li>
+                    <li><a href="">INSTAGRAM</a></li>
+                    <li><a href="">FACEBOOK</a></li>
+                    <li><a href="">REDDIT</a></li>
+                </ul>
+            </div>    
+        </div>  
+    </footer>
+    <script>
+        let currentIndex = 0;
+        const carouselSlide = document.getElementById("popular-carousel");
+        const cards = document.querySelectorAll("#popular-carousel .card");
+        const totalSlides = cards.length;
+
+        function updateSlide() {
+            carouselSlide.style.transform = `translateX(-${currentIndex * 260}px)`;
+        }
+
+        function nextSlide() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            updateSlide();
+        }
+
+        function prevSlide() {
+            currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+            updateSlide();
+        }       
+    </script>
+</body>
+</html>

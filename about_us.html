@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body{
+            margin: 0%;
+            background-color: #0f0f0f;
+        }
+        /* footer  */
+        .footPan{
+            padding-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            background-color: #150050;
+            color: aliceblue;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .socials{
+            align-self: center;
+            margin-right: 10px;
+            color: white;
+            border-bottom: 0;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        li:hover{
+            border-bottom: 2px solid #FB2576;
+        }
+        li>a{
+            color: white;
+            text-decoration: none;
+        }
+        /* header  */
+        nav{
+            background-color: #150050;
+            display: flex;
+            justify-content: space-between;
+            height: 85px;
+            align-items: center;
+        }
+        .navOptions{
+            padding-right:30px;
+        }
+        .navOptions>a{
+            padding: 10px;
+            text-decoration: none;
+            color: aliceblue;
+            border-bottom: 0;
+        }
+        .navOptions>a:hover{
+            border-bottom: solid #FB2576;   
+        }
+        .TextBox{
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .imgbox{
+            height: 30px;
+            margin: auto;
+            padding-left: 10px;
+            align-items: center;
+        }
+        .TextBox>input{
+            width: 400px;
+            height: 50px;
+            border: solid white;
+            border-radius: 15px;
+        }
+        .TextBox:hover{
+            background-color: #FB2576;
+        }
+        .TextBox>input::placeholder{
+            padding-left: 20px;
+            color: #0f0f0f;
+        }
+        .logo{
+            margin-left: 20px;
+        }
+        /* who are we  */
+        .who{
+            margin: 20px;
+            padding: 30px;
+            border: 2px solid #FB2576;
+            color: #FB2576;
+            text-align: justify;
+            border-radius: 20px;
+            font-size: large;
+        }
+        .who:hover{
+            border: 2px solid #FB2576;
+            color: #0f0f0f;
+            background-color: #FB2576;
+        }
+        .who p{
+            text-indent: 50px;
+        }
+        .DV{
+            width: auto;
+            height: auto;
+            background-color: #FB2576;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 30px;
+            display: flex;
+        }
+        .DV .Atexts{
+            display: flex;
+            flex-direction: column;
+        }
+        .DV .Atexts p{
+            border: 2px solid #0f0f0f;
+            border-radius: 20px;
+            padding: 20px;
+            margin-right: 10px;
+        }
+        .DV ul>li>a{
+            padding: 10px;
+        }
+        .DV ul>li>a:hover{
+            border-bottom: 2px solid #0f0f0f;
+            padding: 10px;
+        }
+        .DV .Aimg img{
+            height: 300px;
+            border-radius: 1000px;
+            filter: drop-shadow(1px 1px 8px #0f0f0f);
+        }
+        .JJ{
+            width: auto;
+            height: auto;
+            background-color: #0f0f0f;
+            border: 2px solid #FB2576;
+            border-radius: 20px;
+            color: #FB2576;
+            margin: 20px;
+            padding: 30px;
+            display: flex;
+        }
+        .JJ .Atexts p{
+            border: 2px solid #FB2576;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .JJ .Atexts{
+            margin-left: 30px;
+            margin-right: 10px;
+            
+        }
+        .JJ .Aimg img{
+            height: 300px;
+            border-radius: 1000px;
+            filter: drop-shadow(1px 1px 8px #fb2576);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/AnibroTextWhiteLogo.png" alt="Logo Here">
+            </div>
+            <div class="TextBox">
+                <img class= "imgbox" src="./assets/Search icon.png" alt="logo" >
+                <input type="text" name="Seacrh" placeholder="Search Series">
+            </div>
+            <div class="navOptions">
+                <a href="./index.html">Home</a>
+                <a href="./movies.html">Movies</a>
+                <a href="./series.html">Series</a>
+                <a href="./LoginPage.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <div class="who">
+        <h3>Who are we</h3>
+        <p>Meet the "Infinite Loopers," a dynamic team of four passionate web developers: Dhanabal, Jothiksha, Vaishnavi, and Junaidh Ahamed. Together, they have channeled their love for anime into creating a dedicated anime streaming website. Leveraging their skills in HTML, CSS, and JavaScript, they've built a platform that not only showcases their technical prowess but also serves as a hub for fellow anime enthusiasts to explore and enjoy a vast collection of anime content. Whether you're in search of the latest releases or the cherished classics, the Infinite Loopers have curated a site that promises a seamless viewing experience for all anime fans.</p>
+    </div>
+    <div class="DV">
+        <div class="Atexts">
+            <h2>Dhanabal</h2>
+            <p>Meet our leader, Dhanabal is the skilled leader of the "Infinite Loopers," steering a team of talented developers in their quest to innovate and captivate the world of anime streaming. With a robust command of HTML, CSS, and JavaScript, Dhanabal not only excels in front-end development but also inspires his team to push the boundaries of what's possible on the web. His leadership is characterized by a clear vision and a collaborative spirit, making him the cornerstone of the team's success in creating a user-friendly, engaging anime streaming platform. Whether he's coding or coordinating, Dhanabal's passion for technology and anime shines, driving the Infinite Loopers towards excellence in every project they undertake.</p>
+            <h3>Pages Built</h3>
+            <ul>
+                <li><a href="./about_us.html">About Us</a></li>
+            </ul>
+        </div> 
+        <div class="Aimg">
+            <img src="./assets/stakeHolders/dhanabal.jpg" alt="">
+        </div>
+    </div>
+    <div class="JJ">
+        <div class="Aimg">
+            <img src="./assets/stakeHolders/jothiksha.jpg" alt="">
+        </div>
+        <div class="Atexts">
+            <h2>Jothiksha</h2>
+            <p>Jothiksha is recognized as the best developer within the "Infinite Loopers," where her exceptional coding skills and innovative approach to web development set her apart. Mastering HTML, CSS, and JavaScript, Jothiksha has a knack for transforming complex problems into elegantly simple solutions, enhancing the functionality and user experience of their anime streaming website. Her contributions are not just in code, but in the way she elevates the team's technical capabilities, always staying ahead with the latest industry trends and technologies. Jothiksha's dedication and prowess ensure that the platform is not only robust and scalable but also a delight for anime fans to navigate.</p>
+            <h3>Pages Built</h3>
+            <ul>
+                <li><a href="./movies.html">Movies</a></li>
+            </ul>
+        </div> 
+    </div>
+    <div class="DV">
+        <div class="Atexts">
+            <h2>Vaishnavi</h2>
+            <p>Vaishnavi stands out as the best resource on the "Infinite Loopers" team, celebrated for her versatility and exceptional skill set across multiple facets of web development. With deep expertise in HTML, CSS, and JavaScript, she plays a pivotal role in every phase of the development lifecycle of their anime streaming website—from design to deployment. Vaishnavi's ability to adapt and excel in various roles within the team not only accelerates project timelines but also enhances the overall quality and innovation of their outputs. Her commitment and technical acumen make her a cornerstone of the team, driving them forward with her forward-thinking ideas and robust solutions.</p>
+            <h3>Pages Built</h3>
+            <ul>
+                <li><a href="./series.html">Series</a></li>
+            </ul>
+        </div> 
+        <div class="Aimg">
+            <img src="./assets/stakeHolders/vaishnavi.jpg" alt="">
+        </div>
+    </div>
+    <div class="JJ">
+        <div class="Aimg">
+            <img src="./assets/stakeHolders/junaidh.jpg" alt="">
+        </div>
+        <div class="Atexts">
+            <h2>Junaidh Ahamed</h2>
+            <p>Junaidh Ahamed is a front-end developer alongside Vaishnavi in the "Infinite Loopers" team, where he brings a fresh perspective and innovative ideas to the development of their anime streaming website. His proficiency in HTML, CSS, and JavaScript is instrumental in implementing interactive features that engage users and enhance the usability of the site. Junaidh is known for his problem-solving skills and his ability to work closely with team members to translate design visions into functional realities. His contributions are key in ensuring that the website is not only robust but also delivers a user-friendly experience that anime fans love. Junaidh's enthusiasm and commitment to excellence are palpable in every project he undertakes, making him a vital asset to the Infinite Loopers.</p>
+            <h3>Pages Built</h3>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./Video.html">Video</a></li>
+                <li><a href="./LoginPage.html">Login</a></li>
+            </ul>
+        </div> 
+        
+    </div>
+    <footer>
+        <div class="footPan">
+            <div class="logo">
+                <img src="./assets/LogoTextImage.png">
+                <h5>Your anime destination</h5>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="./about_us.html">ABOUT US</a></li>
+                    <li><a href="">INSTAGRAM</a></li>
+                    <li><a href="">FACEBOOK</a></li>
+                    <li><a href="">REDDIT</a></li>
+                </ul>
+            </div>    
+        </div>  
+    </footer>
+</body>
+</html>

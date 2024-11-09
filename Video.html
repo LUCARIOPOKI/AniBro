@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        body{
+            margin: 0%;
+            background-color: #0f0f0f;
+        }
+        /* footer  */
+        .footPan{
+            padding-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            background-color: #150050;
+            color: aliceblue;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .socials{
+            align-self: center;
+            margin-right: 10px;
+            color: white;
+            border-bottom: 0;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        li:hover{
+            border-bottom: 2px solid #FB2576;
+        }
+        li>a{
+            color: white;
+            text-decoration: none;
+        }
+        /* header  */
+        nav{
+            background-color: #150050;
+            display: flex;
+            justify-content: space-between;
+            height: 85px;
+            align-items: center;
+        }
+        .navOptions{
+            padding-right:30px;
+        }
+        .navOptions>a{
+            padding: 10px;
+            text-decoration: none;
+            color: aliceblue;
+            border-bottom: 0;
+        }
+        .navOptions>a:hover{
+            border-bottom: solid #FB2576;   
+        }
+        .TextBox{
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .imgbox{
+            height: 30px;
+            margin: auto;
+            padding-left: 10px;
+            align-items: center;
+        }
+        .TextBox>input{
+            width: 400px;
+            height: 50px;
+            border: solid white;
+            border-radius: 15px;
+        }
+        .TextBox:hover{
+            background-color: #FB2576;
+        }
+        .TextBox>input::placeholder{
+            padding-left: 20px;
+            color: #0f0f0f;
+        }
+        .logo{
+            margin-left: 20px;
+        }
+        /* video */
+        .vidPanel{
+            margin: 20px;   
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .poster{
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            height: auto;
+            color: #FB2576;
+            border: 2px solid #FB2576;
+            text-align: center;
+            background-image: url(./assets/poster/jjk.jpg);
+            background-size: cover;
+            border-radius: 20px;
+            align-items: center;
+            align-content: center;
+        }
+        .poster p{   
+            width: 200px;
+            text-align: justify;
+            background-color: rgba(15, 15, 15, 1);
+            text-indent: 50px;
+            filter: drop-shadow(3px 3px 20px white);
+        }
+        .poster h3{
+            padding-top: 300px;
+            color: aliceblue;
+            filter: drop-shadow(5px 5px 8px #000000);
+        }
+        /* video  */
+        video{
+            filter: drop-shadow(1px 1px 8px #FB2576);
+            border-radius: 20px;
+        }
+        /* episodes */
+        .EpisodesPanel{
+            width: auto;
+            height: auto;
+            border: 2px solid #FB2576;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #FB2576;
+            border-radius: 20px;
+            justify-content: space-evenly;
+        }
+        .EpisodesPanel>ul>li{
+            border: 2px solid #FB2576;
+            color: white;
+            margin-top: 50px;
+            padding: 10px;
+            margin-top:30px ;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 5px;
+        }
+        .EpisodesPanel>ul>li:hover{
+            background-color: #FB2576;
+            color: #0f0f0f;
+        }
+
+        /* headings */
+        .heading{
+            margin-bottom: 30px;
+            border-bottom: 2px solid #FB2576;
+            border-right: 2px solid #FB2576;
+            border-top: 2px solid #FB2576;
+            width: 250px;
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            text-indent: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/AnibroTextWhiteLogo.png" alt="Logo Here">
+            </div>
+            <div class="TextBox">
+                <img class= "imgbox" src="./assets/Search icon.png" alt="logo" >
+                <input type="text" name="Seacrh" placeholder="Search Series">
+            </div>
+            <div class="navOptions">
+                <a href="./index.html">Home</a>
+                <a href="./movies.html">Movies</a>
+                <a href="./series.html">Series</a>
+                <a href="./LoginPage.html">Login</a>
+            </div>
+        </nav>
+    </header>
+
+    <div class="vidPanel">
+        <div class="poster">
+            <!-- <img src="./assets/poster/jjk.jpg" alt="Jujutsu Kaisen"> -->
+            <h3>JUJUTSU KAISEN</h3>
+            <p>Jujutsu Kaisen is a shonen anime series and manga series about a high school student who joins a secret organization of sorcerers to fight curses</p>
+        </div>
+        <div class="video">
+            <video width="1000px" controls autoplay>
+                <source src="./assets/JUJUTSU KAISEN/S1 E2.mp4" type="video/mp4">
+                Your browser does not support HTML video.
+            </video>
+        </div>
+    </div>
+    <h3 class="heading">Episodes</h3>
+    <div class="EpisodesPanel">
+        <ul>
+            <li>01</li>
+            <li>02</li>
+            <li>03</li>
+            <li>04</li>
+            <li>05</li>
+            <li>06</li>
+            <li>07</li>
+            <li>08</li>
+            <li>09</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+        </ul>
+        <ul>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li>20</li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+        </ul>
+    </div>
+
+    <footer>
+        <div class="footPan">
+            <div class="logo">
+                <img src="./assets/LogoTextImage.png">
+                <h5>Your anime destination</h5>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="./about_us.html">ABOUT US</a></li>
+                    <li><a href="">INSTAGRAM</a></li>
+                    <li><a href="">FACEBOOK</a></li>
+                    <li><a href="">REDDIT</a></li>
+                </ul>
+            </div>    
+        </div>  
+    </footer>
+</body>
+</html>

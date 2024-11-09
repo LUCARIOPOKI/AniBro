@@ -1,0 +1,276 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AniBro</title>
+    <link rel="shortcut icon" href="./assets/Logo.png" type="image/x-icon">
+    <style>
+        body{
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #0f0f0f;
+        }
+        nav{
+            background-color: #150050;
+            display: flex;
+            justify-content: space-between;
+            height: 85px;
+            align-items: center;
+        }
+        .navOptions{
+            padding-right:30px;
+        }
+        .navOptions>a{
+            padding: 10px;
+            text-decoration: none;
+            color: aliceblue;
+            border-bottom: 0;
+        }
+        .navOptions>a:hover{
+            border-bottom: solid #FB2576;   
+        }
+        .TextBox{
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .imgbox{
+            height: 30px;
+            margin: auto;
+            padding-left: 10px;
+            align-items: center;
+        }
+        .TextBox>input{
+            width: 400px;
+            height: 50px;
+            border: solid white;
+            border-radius: 15px;
+        }
+        .TextBox:hover{
+            background-color: #FB2576;
+        }
+        .TextBox>input::placeholder{
+            padding-left: 20px;
+            color: #0f0f0f;
+        }
+        .logo{
+            margin-left: 20px;
+        }
+        /* card */
+        .card{
+            width: 300px;
+            height:auto;
+            border: 2px solid #FB2576;
+            text-align: center;
+            border-radius: 20px;
+            display: block;
+            color: aliceblue;
+        }
+        .card:hover{
+            color: white;
+            border: 2px solid #FB2576;
+            filter: drop-shadow(1px 1px 6px #fb2576 );
+        }
+        .card>img{
+            width: auto;
+            height: 200px;
+           
+            margin-top: 10px;
+            border-radius: 20px;
+        }
+        .card>img:hover{
+            filter: drop-shadow(1px 1px 4px #fb2576);
+            width:250px;
+            height: 300px;
+        }
+        .card>p{
+            text-align: justify;
+            padding: 10px;
+        }
+        .card>button{
+            width: 100px;
+            height: 40px;
+            color:#FB2576;
+            background-color:#0f0f0f;
+            border: 2px solid #FB2576;
+            border-radius: 20px;
+            transition: width 200ms linear;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: small;
+            margin-bottom: 20px;
+        }
+        .card>button:hover{
+            background-color: #FB2576;
+            color: #0f0f0f;
+            width: 160px;   
+        }
+        .panel{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .heading{
+            margin-bottom: 30px;
+            border-bottom: 2px solid #FB2576;
+            border-right: 2px solid #FB2576;
+            border-top: 2px solid #FB2576;
+            width: 250px;
+            color: white;
+            padding: 20px;
+            border-radius: 40px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+            text-indent: 30px;
+        }
+        /* footers */
+        .footPan{
+            padding-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            background-color: #150050;
+            color: aliceblue;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .socials{
+            align-self: center;
+            margin-right: 10px;
+            color: white;
+            border-bottom: 0;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        li:hover{
+            border-bottom: 2px solid #FB2576;
+        }
+        li>a{
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/AnibroTextWhiteLogo.png" alt="Logo Here">
+            </div>
+            <div class="TextBox">
+                <img class= "imgbox" src="./assets/Search icon.png" alt="logo" >
+                <input type="text" name="Seacrh" placeholder="Search Series">
+            </div>
+            <div class="navOptions">
+                <a href="./index.html">Home</a>
+                <a href="./movies.html">Movies</a>
+                <a href="./series.html">Series</a>
+                <a href="./LoginPage.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <h3 class="heading">NEW RELEASE</h3>
+    <div class="panel">
+        <div class="card">
+            <img src="./images/7_seeds.jpg" alt="">
+            <h1>7 SEEDS</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        
+        </div>
+        <div class="card">
+            <img src="./images/bleach.jpg" alt="">
+            <h1>BLEACH</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+        <div class="card">
+            <img src="./images/black-clover.jpg" alt="">
+            <h1>BLACK CLOVER</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+        <div class="card">
+            <img src="./images/Attack-on-titan.jpg" alt="">
+            <h1>ATTACK-ON-TITAN</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+    
+</div>
+
+</div>
+    <h3 class="heading">ACTION</h3>
+    <div class="panel">
+        <div class="card">
+            <img src="./images/solo_leveling.jpg" alt="">
+            <h1>SOLO LEVELING</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+        <div class="card">
+            <img src="./images/wind breaker.jpg" alt="">
+            <h1>WIND BREAKER</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+        <div class="card">
+            <img src="./images/the_demon.jpg" alt="">
+            <h1>DEMON SLAYER</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+        <div class="card">
+            <img src="./images/my hero academia.jpg" alt="">
+            <h1>MY HERO ACADEMIA</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+    </div>
+    <h3 class="heading">SHONEN</h3>
+    <div class="panel">
+        <div class="card">
+            <img src="./images/Black butter.jpg" alt="">
+            <h1>BLACK BUTTER</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+        <div class="card">
+            <img src="./images/Blue Box.jpg" alt="">
+            <h1>BLUE BOX</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+        <div class="card">
+            <img src="./images/the-elusive-samurai.jpeg" alt="">
+            <h1>THE ELUSIVE SAMURAI</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+        <div class="card">
+            <img src="./images/Ranma.jpg" alt="">
+            <h1>RANMA 1/2</h1>
+            <button>PLAY</button>
+            <button>WATCH</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footPan">
+            <div class="logo">
+                <img src="./assets/LogoTextImage.png">
+                <h5>Your anime destination</h5>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="./about_us.html">ABOUT US</a></li>
+                    <li><a href="">INSTAGRAM</a></li>
+                    <li><a href="">FACEBOOK</a></li>
+                    <li><a href="">REDDIT</a></li>
+                </ul>
+            </div>    
+        </div>  
+    </footer>
+</body>
+</html>

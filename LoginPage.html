@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login To AniBro</title>
+    <style>
+        body{
+            /* background-image: url(./assets/2292016.jpg);
+            background-size: cover; */
+            margin: 0;
+            background-color: #0f0f0f;
+        }
+        /* image */
+        .LoginImage{
+            width: 500px;
+            height: auto;
+            margin: 30px;
+        }
+        .LoginImage>img{
+            width: auto;
+            height: 500px;
+            filter: drop-shadow(5px 5px 4px #FB2576);
+            padding-left: 70px;
+        }
+        /* form  */
+        .login{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        /* form  */
+        .LoginForm{
+            border: 2px solid #FB2576;
+            width: 500px;
+            height: 550px;
+            align-content: center;
+            margin: 30px;
+            border-radius: 50px;
+            margin-left: 200px;
+        }
+        .LoginForm:hover{
+            filter: drop-shadow(4px 4px 4px #fb2576);
+        }
+        h3{
+            text-align: center;
+            color: #FB2576;
+            margin: 30px;
+            text-transform: uppercase;
+        }
+        .login input{
+            margin-left: 40px;
+            margin-bottom: 20px;
+            justify-self: center;
+            width: 400px;
+            height: 50px;
+            border-radius: 20px;
+            background-color: #0f0f0f;
+            border:2px solid #FB2576;
+            color: #FB2576;
+        }
+        input::placeholder{
+            padding-left: 20px;
+        }
+        button{
+            background-color: #0f0f0f;
+            border: 2px solid #FB2576;
+            color:#FB2576;
+            width: 200px;
+            height: 50px;
+            border-radius: 30px;
+            margin-left: 28%;
+        }
+        button:hover{
+            background-color: #FB2576;
+            color: #0f0f0f;
+        }
+        /* footer  */
+        .footPan{
+            padding-left: 20px;
+            margin-top: 20px;
+            display: flex;
+            background-color: #150050;
+            color: aliceblue;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .socials{
+            align-self: center;
+            margin-right: 10px;
+            color: white;
+            border-bottom: 0;
+        }
+        li{
+            list-style: none;
+            display: inline;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        li:hover{
+            border-bottom: 2px solid #FB2576;
+        }
+        li>a{
+            color: white;
+            text-decoration: none;
+        }
+        /* header  */
+        nav{
+            background-color: #150050;
+            display: flex;
+            justify-content: space-between;
+            height: 85px;
+            align-items: center;
+        }
+        .navOptions{
+            padding-right:30px;
+        }
+        .navOptions>a{
+            padding: 10px;
+            text-decoration: none;
+            color: aliceblue;
+            border-bottom: 0;
+        }
+        .navOptions>a:hover{
+            border-bottom: solid #FB2576;   
+        }
+        .TextBox{
+            display: flex;
+            background-color: white;
+            border-radius: 20px;
+        }
+        .imgbox{
+            height: 30px;
+            margin: auto;
+            padding-left: 10px;
+            align-items: center;
+        }
+        .TextBox>input{
+            width: 400px;
+            height: 50px;
+            border: solid white;
+            border-radius: 15px;
+        }
+        .TextBox:hover{
+            background-color: #FB2576;
+        }
+        .TextBox>input::placeholder{
+            padding-left: 20px;
+            color: #0f0f0f;
+        }
+        .logo{
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="./assets/AnibroTextWhiteLogo.png" alt="Logo Here">
+            </div>
+            <div class="TextBox">
+                <img class= "imgbox" src="./assets/Search icon.png" alt="logo" >
+                <input type="text" name="Seacrh" placeholder="Search Series">
+            </div>
+            <div class="navOptions">
+                <a href="./index.html">Home</a>
+                <a href="./movies.html">Movies</a>
+                <a href="./series.html">Series</a>
+                <a href="./LoginPage.html">Login</a>
+            </div>
+        </nav>
+    </header>
+    <div class="login">
+        <div class="LoginImage">
+            <img src="./assets/pngwing.com (7).png" alt="Luffy's Yo">
+        </div>
+        <div class="LoginForm">
+            <h3>Login</h3>
+            <input type="text" placeholder="Enter your name" name="username" id="username"><br>
+            <input type="email" placeholder="Enter a valid E-mail id" name="e-mail" id="e-mail"><br>
+            <input type="password" placeholder="Enter your password" name="password" id="password"><br>
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footPan">
+            <div class="logo">
+                <img src="./assets/LogoTextImage.png">
+                <h5>Your anime destination</h5>
+            </div>
+            <div class="socials">
+                <ul>
+                    <li><a href="./about_us.html">ABOUT US</a></li>
+                    <li><a href="">INSTAGRAM</a></li>
+                    <li><a href="">FACEBOOK</a></li>
+                    <li><a href="">REDDIT</a></li>
+                </ul>
+            </div>    
+        </div>  
+    </footer>
+    <script>
+        function login(){
+            var username=document.getElementById("username").value;
+            var password=document.getElementById("password").value;
+            if( username == "JJVD" && password == "InfiniteLoopers"){
+                // document.getElementById("p").innerHTML= ("Welcome " + name);
+                window.location.href = "./index.html";
+                console.log("Logged in");
+            }
+            else{
+                window.alert("Invalid credentials");
+            }
+        }
+    </script>
+</body>
+</html>
